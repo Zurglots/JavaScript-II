@@ -516,13 +516,41 @@ console.log("largeShirts", largeShirts);
 let ticketPriceTotal = runners.reduce(function(acc, money) {
   return (acc += money.donation);
 }, 0);
+
 console.log("ticketPriceTotal:", ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1
+// Problem 1 - Display all companies
 
-// Problem 2
+whatCompany = [];
+const companyNames = runners.map(function(theCompanies) {
+  return theCompanies.company_name;
+});
+whatCompany.push(companyNames);
+console.log("whatCompany", whatCompany);
 
-// Problem 3
+// console.log("companyNames", companyNames);
+
+// Problem 2 - Display Company Names Less than 5 Characters // Whats the best way to call on the array whatCompany and evaluate string length???
+
+// const shortCompany = whatCompany.filter(function(item.length) {
+//   if (item.length < 5)
+//       return item.length;
+//     }else{
+//     });
+
+// console.log("shortCompany", shortCompany);
+
+// Problem 3 - Array of Emails in lowercase
+
+let allEmails = [];
+
+const needEmails = runners.map(function({ email }) {
+  return email.toLowerCase();
+});
+
+allEmails.push(needEmails);
+
+console.log("allEmails", allEmails);
