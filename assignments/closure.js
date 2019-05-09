@@ -1,9 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function candyKingdom() {
+  const bananaMan = 1 + 2;
+  console.log("bananaMan", bananaMan);
+}
 
+candyKingdom();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
